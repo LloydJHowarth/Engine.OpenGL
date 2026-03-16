@@ -14,8 +14,8 @@ namespace OpenGLGen
             // Generate OpenGL bindings
             DirectoryInfo workingDirectory = new DirectoryInfo(Path.Combine("..", "..", "..", "..", "Evergine.Bindings.OpenGL"));
             var api = new[] { "gles2" };
-            string namespaceText = "namespace Engine.OpenGL";
-            string nativeClassText = "GL";
+            string namespaceText = "namespace Engine";
+            string nativeClassText = "OPENGL";
             GenerateBindings(glFile, workingDirectory, api, namespaceText, nativeClassText);
         }
 
